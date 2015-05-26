@@ -1,0 +1,31 @@
+ClimMob - Data Analysis	ClimMob - Análisis de datos
+Select the explanatory variables for the analysis:	Seleccione las variables explicativas para el análisis:
+We recommend to select up to as 3 variables per analysis.	Recomendamos seleccionar un máximo de 3 variables por análisis.
+Mark all variables you want for the analysis:	Marque todas las variables que desee incluir en el análisis:
+For Multiselection: Press Ctrl key and left click with the mouse.	Para seleccionar varias variables: Presionar la tecla Ctrl y hacer click con el botón izquierdo del mouse.
+Select the Characteristics to analise:	Seleccione las Caracteristicas para analizar:
+Mark all characteristics you want to analyse:	Marque todas las características que desee incluir:
+Do you want to include the comparison of the overall performance with the local ITEM?	Quiere incluir la comparación del rendimiento global con la variedad local?
+Yes	Si
+No	No
+Select the documents you want to generate:	Elija los documentos que quiera generar:
+Analysis Report	Reporte del Análisis 
+Info sheets	Hojas informativas
+Accept	Aceptar
+Cancel	Cancelar
+ERROR: You have to select at least one CHARACTERISTIC to analyse.	ERROR: Tiene que seleccionar al menos una CARACTERÍSTICA para analizar.
+WARNING: You have NOT selected any EXPLANATORY VARIABLE for the analysis.	ALERTA: NO seleccionado ninguna VARIABLE EXPLICATORIA para el análisis.
+Overall_Performance	Desempeno_General
+ERROR	ERROR
+WARNING	ALERTA
+ERROR: You have to select at least one DOCUMENT to be generated.	ERROR: Tiene que seleccionar al menos un DOCUMENTO para generar.
+Item	Elemento
+Worse	Peor
+Creating model... This can take some time.	Creando el modelo... Puede tomar algo de tiempo.
+Model created.	El modelo se ha creado.
+Local Variety	Variedad Local
+Select a folder where the files will be created.	Seleccione una carpeta donde los documentos serán creados
+You haven't selected the destination, folder	No ha seleccionado ninguna carpeta
+    Please write the namefile:	    Por favor escriba el nombre del archivo:
+    In case you've selected to generate the report.	    En el caso que haya seleccionado generar el reporte.
+No Explanatory Variables	Sin Variables Explicativas

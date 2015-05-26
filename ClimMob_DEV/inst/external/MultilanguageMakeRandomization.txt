@@ -1,0 +1,50 @@
+ClimMob - Create a Project	ClimMob - Crear un Proyecto
+Create a Project	Crear un Proyecto
+Identifier of the project **	Identificador del proyecto **
+Number of observers (farmers) **	Número de observadores (Agricultores) **
+Number of Items each observer compares (minimum 3) **	Número de Elementos que cada observador compara (mínimo 3) **
+Names of Items **	Nombres de los Elementos **
+Select folder to write to	Seleccione una carpeta para grabar
+**Decimal separator	**Separador decimal
+**Dot	**Punto
+**Comma	**Coma
+**Format:	**Formato:
+**Excel	**Excel
+Standard	Estándar
+Create Project	Crear Proyecto
+Complete the remaining blanks on the form.	Complete los vacíos en el formulario.
+_ClimMobProject.csv	_ClimMobProyecto.csv
+File written to disk: 	Archivo grabado: 
+Compulsory fields are marked with a double asterisk (**)	Los campos obligatorios estan marcados con un doble asterisco (**)
+Overall_Performance	Desempeno_General
+Done	Acción completada
+You can add as many the explanatory variables do you need (Gender, Location, Age, Pesticides Usage....),	Puede añadir cuantas variables explicativas necesite (Genero, Localización, Edad, Uso de Pesticidas...) 
+Names of the Explanatory variables:	Nombres de las variables explicativas:
+By default, we are evaluating the overall performance of the different Items,	Por defecto se evalua el desempeño general de los diferentes Elementos,
+You can add other complementary characteristics to evaluate (vigor, resistance to plagues...)	Puede añadir otras características complementarias para evaluar (vigor, porte, resistencia a las plagas...)
+Name of the Characteristics:	Nombre de las características:
+Observers	Observadores
+Names_Observers	Nombres_Observadores
+Item	Elemento
+Position	Posicion
+Characteristic	Caracteristica
+Best_Item	Mejor_Elemento
+Worst_Item	Peor_Elemento
+Surname_Observers	Apellidos_Observadores
+Do you want to include it as a characteristic?	Quiere incluirlo como característica?
+Yes	Si
+No	No
+Are you going to compare the overall performance of your Items (varieties) with the local Item?	Va a comparar el desempeño general de sus Variedades con la Variedad local?
+NOTE: If "No" is chosen you will have to write at least one complementary characteristic.	NOTA: Si escoje "No", deberá escribir al menos una característica complementaria
+Overall_Performance_VS_Local-(Better/Worse)	Desempeno_General_VS_Local-(Mejor/Peor)
+-(A/B/C...)
+IMPORTANT:	 IMPORTANTE:
+ - YOU CAN ADD AS MANY EXTRA EXPLANATORY VARIABLES AS YOU LIKE, BUT	 - PUEDE AÑADIR QUANTAS VARIABLES EXPLICATIVAS EXTRA COMO QUIERA, PERO 
+ - DO NOT DELETE ANY OF THE GENERATED COLUMNS	 - NO ELIMINE LAS COLUMNAS GENERADAS
+ - DO NOT MODIFY THE NAMES OF THE COLUMNS	 - NO MODIFIQUE LOS NOMBRES DE LAS COLUMNAS
+ - FILL ALL EMPTY CELLS, OR	 - RELLENE TODAS LAS CELDAS, O
+ - REMOVE EMPTY ROWS BEFORE UPLOADING THE DATA	 - ELIMINE TODAS LAS FILAS VACÍAS ANTES DE CARGAR LOS DATOS
+ Full_Address	Direccion_Completa
+ Phone_number	Numero_de_Telefono
+ Select a folder where the files will be created.	Seleccione una carpeta donde los documentos serán creados
+You haven't selected the destination, folder	No ha seleccionado ninguna carpeta

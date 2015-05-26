@@ -1,0 +1,4 @@
+.helpClimMob <- function()
+{
+  vignette("ClimMob")
+}
