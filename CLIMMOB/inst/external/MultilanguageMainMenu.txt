@@ -1,0 +1,9 @@
+ClimMob - Main menu	ClimMob - Menú principal
+Create a Project	Crear un Proyecto
+Merge datasets	Fusionar datos
+Load  Data	Cargar Datos
+Data Analysis	Analizar Datos
+Generate analysis report	Generar informe de análisis
+Generate info sheets	Generar hojas informativas
+Get more info and help	Obtener más información y ayuda
+Show data	Mostrar datos

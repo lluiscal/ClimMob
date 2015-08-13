@@ -1,0 +1,3 @@
+ClimMob - Start 	| Inicio
+Select a language	English
+Seleccione un idioma	Español

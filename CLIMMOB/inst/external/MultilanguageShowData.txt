@@ -1,0 +1,4 @@
+Data table	Tabla de datos
+Close	Cerrar
+Error	Error
+First load a table in the previous menu	Primero Cargar una tabla en el menú anterior

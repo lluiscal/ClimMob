@@ -1,0 +1,53 @@
+Su reporte de ClimMob
+Usted está leyendo un informe generado por ClimMob, un paquete de software para analizar datos generados por crowdsourcing, también llamada ciencia ciudadana.
+Autor
+Introducción
+En la agricultura, las condiciones ambientales locales (climatología local) determinan que tecnologías se adaptan mejor o peor a los sistemas agropecuarios. En suelos secos, por ejemplo, las variedades tolerantes a sequía rinden mejor que otras, pero en suelos húmedos rinden igual o menos, comparado con las demás. No sólo la sequía, sino también una gama amplia de otros problemas, como el estrés térmico, las inundaciones, nuevas plagas y enfermedades tienden a intensificarse bajo el cambio climático. Esta multitud de factores limitantes requieren nuevas metodologías para proveer soluciones que serán evaluadas en diversos escenarios. 
+La ciencia ciudadana está basada en la colaboración de los llamados "ciudadanos científicos" o observadores voluntarios (con o sin pago). Los investigadores de los proyectos asignan tareas mínimas (observaciones, experimentos...) que, una vez completadas serán recopiladas aportando una gran cantidad de información a la ciencia. Una de las ventajas de llevar a cabo un experimento basado en la ciencia ciudadana es que los investigadores pueden acceder a muchos ambientes y escenarios al organizar sus experimentos. Como los agricultores contribuyen con su tiempo, habilidades y conocimientos a la investigación, los investigadores logran hacer más experimentos y obtener mucha más información que en un proyecto organizado de forma tradicional. Otra gran ventaja recae sobre los "ciudadanos científicos", ya que estos adquieren nuevos conocimientos y habilidades, que podrán usar en el futuro para enfrentarse a nuevos desafíos en su trabajo.
+ClimMob
+El objetivo principal de ClimMob es ayudar a los agricultores adaptarse a condiciones climáticas variables y cambiantes. ClimMob se creó como parte de la investigación de Bioversity International dentro del Programa de Investigación en Cambio Climático, Agricultura y Seguridad Alimentaria (CCAFS por sus siglas en inglés) del CGIAR. ClimMob sirve para preparar experimentos de ciencia ciudadana en que un gran número de agricultores observan y comparan diferentes opciones tecnológicas bajo un rango amplio de condiciones ambientales (van Etten 2011).
+El software ClimMob asigna un número limitado de objetos (típicamente 3 variedades variedades de cultivo o prácticas agrícolas) a cada uno de los agricultores, quienes tendrán que comparar su rendimiento. Estos objetos asignados son diferentes combinaciones de un conjunto mucho más grande de objetos. Comparaciones de este tipo son una forma muy fiable de obtener datos con observadores humanos (Martin 2004). Una vez los resultados de los experimentos han sido recogidos, ClimMob construye una imagen para todo el conjunto de objetos repartidos, combinando todas las observaciones. ClimMob también reconstruye el orden jerárquico de estos objetos, tomando en cuenta las diferencias y similitudes entre los observadores y sus condiciones ambientales. De esta manera puede generar grupos de observadores o "científicos ciudadanos" con un determinado perfil o característica (Sexo, edad...).
+ClimMob utiliza un método estadístico recientemente publicado para analizar datos de categorización que recientemente ha sido publicado (Strobl et al. 2011). Genera automáticamente informes analíticos, así como hojas informativas individualizadas para cada participante. Se espera que ClimMob ayudará a los investigadores agrícolas empezar a usar métodos basados en el crowdsourcing para acelerar la adaptación climática.
+Complementariamente a las tareas que realizan los agricultores, se realiza un monitoreo ambiental detallado, usando los nuevos sensores de bajo costo (Mittra et al. 2013), hace posible comparar entre sitios y predecir la producción de las variedades evaluadas en nuevos lugares.
+Cómo citar
+Si usted publica resultados generados con ClimMob, debe de citar un cierto número de artículos, ya que el paquete de software se construyó sobre varias contribuciones. Van Etten (2011) introdujo la filosofía de crowdsourcing en que se basa ClimMob. Es importante mencionar que ClimMob se implementó en R, un software libre de código abierto (R Development Core Team 2014). Metodológicamente, se debe mencionar que ClimMob aplica el método de árboles Bradley-Terry (Strobl et al. 2011). Para citar ClimMob como tal, mencionar Van Etten & Calderer (2015).
+Interpretación
+Aquí siguen algunos consejos para ayudarle a interpretar los resultados que siguen. 
+Las tres primeras tablas que siguen dan un resumen de las variables, los diferentes objetos que del análisis y las características que se evaluaron.
+Para cada combinación de variables explicativas elegidas, se generará una figura con un árbol de Bradley-Terry. La figura ofrece una representación visual de como se formaron los grupos de observadores dependiendo de sus características y preferencias. 
+En las figuras de los árboles de Bradley-Terry, los valores en los rectángulos (llamados nodos terminales) representan el "Worth" o Confianza de los objetos. El "Worth" reescala los resultados de todos los objetos para que la suma de estos sea igual a 1 en cada grupo o nodo terminal. El "Worth" representa el grado de éxito de cada objeto en el grupo. Cada grupo o nodo representa un grupo de observadores, y tiene su correspondiente figura y tabla de la "estimación relativa" después de la figura del árbol de Bradley-Terry.
+La figura de la "estimación relativa" ofrece una idea de cual es el mejor y el peor objeto en cada grupo con su correspondiente error. Las tablas que le siguen están pensadas para que los usuarios avanzados puedan realizar cálculos extras con los resultados preliminares.
+Datos y resultados
+Número de observadores
+Número de objetos (variedades) cada observador clasifica
+Número de aspectos para los que cada observador clasifica
+Número total de tipos de objetos (variedades)
+Variable
+Valor
+Tipos de objetos (variedades)
+Nombres
+Características de cada objeto (variedad) que fueron evaluados
+Características evaluadas
+CARACTERÍSTICA:
+Variable(s) Explicativa(s):
+Estimación Relativa en el nodo
+El "Worth" representa la puntuación relativa de cada tipo de objeto (variedad). Las puntuaciones bajo cada grupo (nodo) suman a uno.
+Referencias
+van Etten, J. and Calderer, L. 2015. ClimMob. Crowdsourcing climate-smart agriculture. R package.
+van Etten, J. 2011. Crowdsourcing crop improvement in sub-Saharan Africa: A proposal for a scalable and inclusive approach to food security. IDS Bulletin 42(4), 102-110.
+Martin, G.J. 2004. Ethnobotany. A Methods Manual. London: Earthscan.
+Carolin Strobl, Florian Wickelmaier, Achim Zeileis (2011). Accounting for individual differences in Bradley-Terry models by means of recursive partitioning. Journal of Educational and Behavioral Statistics, 36(2), 135-153. doi:10.3102/1076998609359791
+Mittra, S., J. van Etten, and T. Franco. 2013. iButtons manual.
+Verzani, J. gWidgets2. R package on GitHub
+R Development Core Team (2014). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. ISBN 3-900051-07-0, URL http://www.R-project.org/
+Mejor
+Peor
+Si tiene alguna pregunta adicional sobre los árboles de Bradley-Terry y cómo se calculan las estimaciones de los grupos, por favor consulte el artículo de Strobl. et al. (2011).
+Variedad
+Estimacion
+Error Estandar
+Error Cuasi Estandar
+Cuasi Varianza
+Las siguientes variables explicativas: 
+. NO tienen significancia en el modelo usado. Únicamente tienen un nodo resultante con los siguentes valores:
+Estimación Relativa en el único nodo

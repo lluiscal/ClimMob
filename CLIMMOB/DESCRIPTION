@@ -1,0 +1,13 @@
+Package: ClimMob
+Type: Package
+Title: Crowdsourcing climate-smart agriculture
+Version: 1.0
+Date: 2014-12-09
+Author: Jacob van Etten, Lluis Calderer
+Maintainer: Jacob van Etten <jacobvanetten@yahoo.com>, Lluis Calderer <lluiscal@gmail.com>
+Depends: psychotools, gWidgets2, R.oo, partykit
+Imports: utils, stringi, rtf, gWidgets2tcltk, qvcalc, Formula, sandwich
+Description: Data analysis for crowdsourcing experiments to test climate-smart agricultural practices
+License: GPL (>=3)
+LazyLoad: yesx
+

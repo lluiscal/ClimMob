@@ -1,0 +1,47 @@
+Load data	Carga datos
+Choose a dataset	Seleccione un juego de datos:
+BUENO	BUENO
+Load	Carga
+OR	O
+Load example data:	Carga datos de ejemplo:
+ENGLISH_3VARIABLES.csv	CASTELLANO_3VARIABLES.csv
+Data could not be read.	No se puede leer el archivo.
+Error	Error
+Data loaded.	Datos cargados.
+Done	Acción completada
+ClimMob - Load data	ClimMob - Carga datos
+Item	Elemento
+Observers	Observadores
+Names_Observers	Nombres_Observadores
+Position	Posicion
+Characteristic	Caracteristica
+Best_Item	Mejor_Elemento
+Worst_Item	Peor_Elemento
+There is no data in the column of explanatory variable	No hay datos en la columna de la variable explanatoria
+row number	fila numero
+Local	Local
+WARNING: In the column of the explanatory variable	ALERTA: En la columna de la variable explanatoria
+the value	el valor
+appears a few times, is it well written?	aparece pocas veces, está, bien escrito?
+In the column:	En la columna:
+and row:	y fila:
+There is a incorrect value	Existe un valor incorrecto
+In the columns:	En las columnas:
+The values are identical	Los valores son identicos
+Better	Mejor
+Worse	Peor
+No errors found	No se han encontrado errores
+There has been found	Se han encontrado
+posible errors	posible errores
+and	y
+warnings.	alertas.
+The file:	El archivo:
+has been created.	ha sido creado.
+We recomend that check the errors, correct and load again the file.	Le recomendamos que revise, corrija y cargue de nuevo el archivo.  
+If you prefer to continue without correcting the errors,	Si prefiere continuar sin corregir los errores,
+lines will be deleted	lineas serán eliminadas
+Accept and Continue	Aceptar y Continuar
+Cancel	Cancelar
+Surname_Observers	Apellidos_Observadores
+Full_Address	Direccion_Completa
+Phone_number	Numero_de_Telefono

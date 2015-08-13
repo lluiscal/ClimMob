@@ -1,0 +1,718 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[letterpaper]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\title{\Huge{User Manual for ClimMob}}
+\author{Jacob van Etten, Lluis Calderer}
+\date{2014-12-03}
+%\VignetteIndexEntry{Istalations instructions and user manual of ClimMob 1.0}
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\begin{center}
+	\begin{LARGE}
+		User Manual for ClimMob
+	\end{LARGE}
+\end{center}
+
+\vspace{1cm}
+
+{\center
+	{\large 
+		Software for Crowdsourcing Climate-Smart Agriculture (version 1.0)\\
+	}
+}
+
+\smallskip
+
+\begin{center}
+	\begin{large}
+		Jacob van Etten\\
+	\end{large}
+\end{center}
+
+\vfill
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=120mm]{ClimMob_img001.png}
+%%\caption{Pues si pues si \label{overflow}}
+\end{figure}
+
+\pagebreak
+
+\begin{flushleft}
+	Designed for double-sided printing.\\
+
+	\bigskip
+	
+	\begin{large}
+		How to cite\\
+	\end{large}
+
+	van Etten, J. 2014. User Manual for ClimMob, Software for Crowdsourcing Climate-Smart Agriculture (version 1.0). Bioversity International.
+
+	\vspace{13cm}
+
+	\begin{large}
+		Acknowledgments\\
+	\end{large}
+	This work was undertaken as part of the CGIAR Research Program on Climate Change, Agriculture and Food Security (CCAFS), which is a strategic partnership of CGIAR and Future Earth. The views expressed in this document cannot be taken to reflect the official opinions of CGIAR or Future Earth. \\
+	\smallskip
+	Laura Velilla prepared the numbered screenshots.
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\begin{large}
+		Introduction\\
+	\end{large}
+	\bigskip
+	\setlength{\parindent}{0.5cm}
+	ClimMob is a software programme for crowdsourcing climate-smart agriculture. Crowdsourcing means that tasks are outsourced to "crowds", large numbers of volunteers who each do a small task. Crowdsourcing uses the Internet or mobile telephones to distribute work. This makes it possible to engage many people at a low cost and realize large amounts of work in a short time. Crowdsourcing climate-smart agriculture implies that farmers contribute observations in order to produce information about technological options under different field conditions. These observations are then combined and patterns extracted, providing new insights about the suitability of the evaluated options.\\
+	\bigskip
+	Crowdsourcing as a scientific strategy is very relevant to climate-smart agriculture. For agriculture, climate change is an extremely complex challenge. To deal with climate change it will not be enough to boost our abilities to predict and plan. Our predicting and planning abilities are limited not only by uncertainty about climate change itself, but also by the multiplicity and complexity of possible responses. Adaptive responses to climate change are highly diverse, even under similar conditions, because they involve human choice. On top of that, adaptive responses in one part of an agricultural system often have unforeseen cascading consequences for other parts of the system. To prepare ourselves for unforeseen issues in diverse, multidimensional change processes, we need to drastically boost our abilities to observe changing conditions, experiment with diverse options under real-life conditions and share information about multiple solutions. Boosting these abilities is the goal of crowdsourcing climate-smart agriculture.\\
+	\bigskip 
+We use ClimMob to implement a crowdsourcing methodology in which participants each rank a small number of technological alternatives, such as seeds of different varieties or different soil amendments. From a pool of 10-100 technological options, we draw a large number of small sets, each containing a different combination of options. (Sets of three options usually work best.) We then assign these sets randomly to the participants. As the options in the sets partly overlap, participants are repeatedly assessing the performance of these options under different conditions. We also record the different environmental and management conditions for each participant. From the resulting data, we extract general patterns to identify the best alternatives for different conditions and to identify remaining needs for future innovation. We then share this information with farmers and technology developers.\\
+	\bigskip 
+	ClimMob generates (1) the randomization of combinations to assign to each participant, (2) analytical reports and (3) information sheets specific to each participant. This manual explains step by step how to install and use ClimMob. Another manual in this series deals with the use of environmental sensors for crowdsourcing climate-smart agriculture (Mittra et al. 2013). If you have any problems using ClimMob or suggestions for improvement, please write an email to the author, Jacob van Etten (j.vanetten@cgiar.org).\\
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\begin{LARGE}
+		Installation Guide\\
+	\end{LARGE}
+	\bigskip
+
+	\begin{large}
+		Install R\\
+	\end{large}
+	\bigskip
+	
+	\setlength{\leftskip}{1cm}
+		Download R for your operating system from the following website.\\
+		\bigskip
+
+	\setlength{\leftskip}{2cm}
+		http://cran.rstudio.com/\\
+		\bigskip
+
+	\setlength{\leftskip}{1cm}
+		Click on the downloaded file and follow the instructions. Keep default settings.\\
+		\bigskip\bigskip\bigskip
+
+	\setlength{\leftskip}{0cm}
+		\begin{large}
+			Install RStudio\\
+			\bigskip
+		\end{large}
+
+	\setlength{\leftskip}{1cm}
+		Download RStudio from the following link.\\
+		\bigskip
+
+	\setlength{\leftskip}{2cm}
+		http://www.rstudio.com/ide/download/desktop\\
+		\bigskip
+
+	\setlength{\leftskip}{1cm}
+		Choose the version recommended for your operating system.\\
+		\bigskip
+		Install the downloaded file. \\
+		\bigskip\bigskip\bigskip
+
+	\setlength{\leftskip}{0cm}		
+		\begin{large}
+			Install XQuartz (Mac only)\\
+			\bigskip
+		\end{large}
+
+	\setlength{\leftskip}{1cm}
+		Mac users have to download XQuartz.\\
+		\bigskip
+
+	\setlength{\leftskip}{2cm}
+		\url{https://xquartz.macosforge.org/landing/}
+		\bigskip
+		Download the *.dmg file for the latest version of XQuartz.\\
+		\bigskip
+		Install XQuartz using this file. At the end of the installation, a dialog will appear informing "You will need to log out and log back in to make XQuarts your default X11 server". Click OK. \\
+		\bigskip
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+
+	\setlength{\leftskip}{0cm}
+		\begin{large}
+			Install ClimMob\\
+			\bigskip
+		\end{large}
+
+	\setlength{\leftskip}{1cm}
+		We will now install ClimMob, which is a package (=plug-in) that works with R and RStudio. \\
+		\bigskip
+		Step 1. Getting started\\
+		\bigskip
+
+	\setlength{\leftskip}{2cm}
+		Open Rstudio.\\
+		\bigskip
+		Make sure you are connected to the Internet.\\
+		\bigskip
+
+	\setlength{\leftskip}{1cm}
+		Step 2. Get packages from CRAN \\
+		\bigskip
+
+	\setlength{\leftskip}{2cm}
+		ClimMob uses some functionality from other R packages, which we need to install first. There are two methods to install these packages: (1) copying and pasting code into the RStudio console or (2) by using the graphical user interface (clicking).\\
+		\bigskip
+
+	\setlength{\leftskip}{2cm}
+		Method 1: Cutting and pasting\\
+		\bigskip
+
+	\setlength{\leftskip}{3cm}
+		Copy and paste the following code into the console of RStudio in the left part of the window.\\
+		\bigskip
+
+	\setlength{\leftskip}{4cm}
+		install.packages("rtf")\\
+		install.packages("psychotree")\\
+		install.packages("gWidgets2tcltk")\\
+		install.packages("stringi")\\
+		\bigskip
+
+	\setlength{\leftskip}{3cm}
+		Hit Enter. RStudio should now automatically install the packages.\\
+		\bigskip
+
+	\setlength{\leftskip}{2cm}
+		Method 2: Clicking and typing\\
+		\bigskip
+
+	\setlength{\leftskip}{3cm}
+		In the lower right corner of the RStudio window, click on the tab "Packages". Then click "Install packages".\\
+		\bigskip
+		Make sure that "Install from" is set to "Repository (CRAN)".\\
+		\bigskip
+		In the white space, type or copy-paste the names of the following packages:\\
+		\bigskip
+
+	\setlength{\leftskip}{4cm}
+		rtf, psychotree, gWidgets2tcltk,stringi\\
+		\bigskip
+
+	\setlength{\leftskip}{3cm}
+		Make sure that "Install dependencies" is checked.\\
+		\bigskip
+		Click "Install".\\
+		\bigskip
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\setlength{\leftskip}{1cm}
+		Step 3. Install ClimMob
+		\bigskip
+
+	\setlength{\leftskip}{2cm}
+		Method 1
+		\bigskip
+
+	\setlength{\leftskip}{3cm}
+		Paste the following code in the lower right quadrant of RStudio (R Console) after the prompt (">").
+		\bigskip
+
+	\setlength{\leftskip}{4cm}
+		install.packages("ClimMob",repos="http://R-Forge.R-project.org")\\
+		\bigskip
+
+	\setlength{\leftskip}{3cm}
+		Then hit enter. See what messages come up. If the package does not install, try Method 2.
+		\bigskip
+
+	\setlength{\leftskip}{2cm}
+		Method 2
+		\bigskip
+
+	\setlength{\leftskip}{3cm}
+		Download the .tar.gz file for ClimMob manually. Open the following site
+		\bigskip
+
+	\setlength{\leftskip}{3cm}
+		\url{https://r-forge.r-project.org/R/?group_id=1156}
+		\bigskip
+
+	\setlength{\leftskip}{3cm}
+		Click on "(.tar.gz)" under ClimMob to download the file. Remember in which folder you download the file.
+		\bigskip
+		In the lower right corner of the RStudio window, click on the tab "Packages". Then click "Install packages".
+		\bigskip
+		Make sure that "Install from" is set to "Package Archive File (.tgz; .tar.gz)". Select the .tar.gz file that you have just downloaded and click on "Install"
+		\bigskip
+
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\begin{LARGE}
+		Using ClimMob\\
+	\end{LARGE}
+	\bigskip
+
+	\begin{large}
+		Starting ClimMob\\
+	\end{large}
+	\bigskip
+
+	\setlength{\leftskip}{1cm}
+		RStudio looks like this.\\
+
+	\begin{figure}[ht!]
+	\setlength{\leftskip}{0.9cm}
+	\includegraphics[width=100mm]{ClimMob_img002.png}
+	%%\caption{Pues si pues si \label{overflow}}
+	\end{figure}
+
+	\setlength{\leftskip}{1cm}
+		In the lower right quadrant of the RStudio interface, click on the tab "Packages".\\
+	\smallskip
+		Check the box in front of ClimMob to activate the package. See the orange arrow in the following picture.\\
+	\smallskip
+		RStudio now opens ClimMob. The window may not appear on top. If you don’t see it, look for it on the bar with active applications.\\
+	\smallskip
+		The following start window will show up, which allows the user to select his language of preference. In version 1.0, the languages that are available are English and Spanish.\\
+
+	\begin{figure}[ht!]
+	\setlength{\leftskip}{0.9cm}
+	\includegraphics[width=80mm]{ClimMob_img003.png}
+	%%\caption{Pues si pues si \label{overflow}}
+	\end{figure}
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\begin{large}
+		Main menu\\
+	\end{large}
+	\bigskip
+
+	\setlength{\leftskip}{1cm}
+		After the language selection initial window, the main menu will appear. If this menu disappears for some reason, it can be opened by clicking on one of the icons shown in the previous sections. Also, you can uncheck and check ClimMob again under the Packages tab (see previous section). You will need to set the language again.\\
+		\bigskip
+		The main window looks as follows. 
+
+	\begin{figure}[ht!]
+	\setlength{\leftskip}{0.9cm}
+	\includegraphics[width=100mm]{ClimMob_img004.png}
+	%%\caption{Pues si pues si \label{overflow}}
+	\end{figure}
+
+	\setlength{\leftskip}{1cm}
+		Each button opens a new window. The different buttons are shown in order of the experimental process. First a randomization is made. Then data are being generated which are combined with the original design table. An analytical model is created, which can then generate two different types of output: an analysis report and info sheets for each participant.
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\begin{large}
+		Create randomization\\
+	\end{large}
+	\bigskip
+
+	\setlength{\leftskip}{1cm}
+		The "Create randomization" window allows the user to create a spreadsheet with the allocation of combinations of items (technological options) to different participants (observers).
+	\bigskip
+
+	\begin{normalsize}
+		How the randomization works\\
+	\end{normalsize}
+	\bigskip
+
+	\setlength{\leftskip}{2cm}
+		The randomization balances the different items, so that if you take the items assigned to a number of consecutive observers, you get more or less the same number of the different items. 
+		\smallskip
+		For example, you create a randomized set of a total of 5 items with 3 items per observer. You assign sets 1-10 to one village and 11-20 to another village. In this case, both villages get each item ~6 times. 
+		\smallskip
+		The order in which each item occurs in a set received by an observer is random.
+
+	\begin{figure}[ht!]
+	\setlength{\leftskip}{1.9cm}
+	\includegraphics[width=110mm]{ClimMob_img005.png}
+	%%\caption{Pues si pues si \label{overflow}}
+	\end{figure}
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\setlength{\leftskip}{1cm}
+		The following inputs are needed.\\
+		\bigskip
+
+
+	\begin{enumerate}
+		\setlength{\leftskip}{1cm}
+			\item There may be different groups of participants in different areas, different years, etc. To avoid confusion, they should each have a unique identifier (for instance, a letter). This will prepended to the name of the file that will be generated, as well as the IDs of the participants. For example, if you type "A" here, the file name will become AClimMobRandomization.csv. Participant IDs inside the file will be A1, A2, A3, etc.
+			\bigskip
+			\item How many participants are there in your trial?
+			\bigskip
+			\item How many items (technological options) will be given to each participant? A small number (2-5) is expected. Sets of 3 items usually work best.
+			\bigskip
+			\item What are the names of the items (technological options) that each gets? Here you could give variety names, the names of different soil amendments, etc.
+			\bigskip
+			\item Where should the file be written? Pick a folder. To change the file name, write the filename after the path of the folder.
+			\bigskip
+			\item Decimal separators can be set. In some countries, 1.2 is given as 1,2. This has consequences for the way the data is being stored. Here you can change the default.
+			\bigskip
+			\item Excel is widely used, but has its own peculiar way to deal with data storage. If you are going to use Excel, indicate this here. Otherwise, go for a standard CSV file. 
+			\bigskip
+			\item Click here when you are done. Then check the file that has been created. If you want to change anything, just adjust your inputs and click "Create randomization" again.
+
+	\end{enumerate}
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\begin{large}
+		Data formats\\
+	\end{large}
+	\bigskip
+
+	\setlength{\leftskip}{1cm}
+		Data to be loaded in ClimMob has a specific format. The easiest way to learn about this format is by looking at the example data included in ClimMob. These example data can be loaded in the "Load data" window. See page 18-19 for information on this window. Following these instructions, RStudio will show the following table (only the first rows are shown).\\
+
+	\begin{figure}[ht!]
+	\setlength{\leftskip}{0.9cm}
+	\includegraphics[width=140mm]{ClimMob_img006.png}
+	%%\caption{Pues si pues si \label{overflow}}
+	\end{figure}
+	\bigskip
+
+	\setlength{\leftskip}{1cm}
+		These are the characteristics that any ClimMob dataset should have.\\
+		\smallskip
+
+		\begin{itemize}
+			\setlength{\leftskip}{1cm}
+
+				\item The first row should contain the variable names. Avoid variable names with non-ASCII characters (symbols, letters with accents and letters you would not find on an English language keyboard).
+				\smallskip
+				\item From the second row onwards, each row contains a different observation. 
+				\smallskip
+				\item One variable contains a unique code for each observer.
+				\smallskip
+				\item In the observations data, the ranking choices are in different variables (columns) in descending order (from best to worst). In the example, these variables are: Winner, Middle, Loser.
+				\smallskip
+				\item If different aspects are being evaluated, one variable is added to indicate this. In the example, this is the variable Questions.
+		\end{itemize}
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\begin{large}
+		Merge files \\
+	\end{large}
+	\bigskip
+
+	\setlength{\leftskip}{1cm}
+		To create the table shown in the previous section, you can use the "Merge files" window in ClimMob. You most likely have three data files before you start merging the files:\\
+		\bigskip
+
+		\begin{itemize}
+			\setlength{\leftskip}{1cm}
+				\item Original randomization file that ClimMob has generated;
+				\smallskip
+				\item Observer/plot data – characteristics of each observer and plot;
+				\smallskip
+				\item Observational data – data generated by ranking the options. 
+		\end{itemize}
+		\bigskip
+
+		These data files should be merged following the diagram below. The first step could also be done in a spreadsheet program such as Excel. If you do this first step with ClimMob, inspect the intermediate product by opening it before you proceed with the second step.\\
+
+	\begin{figure}[ht!]
+	\setlength{\leftskip}{0.9cm}
+	\includegraphics[width=140mm]{ClimMob_img007.png}
+	%%\caption{Pues si pues si \label{overflow}}
+	\end{figure}
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\setlength{\leftskip}{1cm}
+		The  "Merge files" window looks as follows.\\
+
+	\begin{figure}[ht!]
+	\setlength{\leftskip}{0.9cm}
+	\includegraphics[width=140mm]{ClimMob_img008.png}
+	%%\caption{Pues si pues si \label{overflow}}
+	\end{figure}
+	\bigskip
+
+	These inputs are needed:\\
+	\bigskip
+	\begin{enumerate}
+		\setlength{\leftskip}{1cm}
+			\item Select the first file you want to merge. Click on file and look for it in the folder hierarchy.
+			\bigskip
+			\item Select the second file you want to merge. Click on file and look for it in the folder hierarchy.
+			\bigskip
+			\item Select a folder where the file will be written. Click on file and look for it in the folder hierarchy.
+			\bigskip
+			\item Select whether you want to have dots or commas as decimal separators (1.0 or 1,0). Some countries use commas rather than dots.
+			\bigskip
+			\item Excel is widely used, but has its own peculiar way to deal with data storage. If you are going to use Excel, indicate this here. Otherwise, go for a standard CSV file.
+			\bigskip
+			\item Click here to merge the two files.
+	\end{enumerate}
+			
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\begin{large}
+		Load data \\
+	\end{large}
+	\bigskip
+
+	\setlength{\leftskip}{1cm}
+		If the data format is correct (see page 14), loading data into ClimMob is straightforward.\\
+
+	\begin{figure}[ht!]
+	\setlength{\leftskip}{0.9cm}
+	\includegraphics[width=140mm]{ClimMob_img009.png}
+	%%\caption{Pues si pues si \label{overflow}}
+	\end{figure}
+	\bigskip
+
+	These inputs are needed:
+	\bigskip
+	\begin{enumerate}
+		\setlength{\leftskip}{1cm}
+			\item Click "file" to locate the file and click "Load" to load this file.
+			\bigskip
+			\item Click "Load" to load the example data. Only one dataset is available now.
+	\end{enumerate}
+			
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\begin{large}
+		Make model\\
+	\end{large}
+	\bigskip
+
+	\setlength{\leftskip}{1cm}
+		In the "Make model" window the user specifies the meaning of each variable (column). ClimMob then creates a Terry-Bradley tree model.\\
+
+	\begin{figure}[ht!]
+	\setlength{\leftskip}{0.9cm}
+	\includegraphics[width=140mm]{ClimMob_img010.png}
+	%%\caption{Pues si pues si \label{overflow}}
+	\end{figure}
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\setlength{\leftskip}{1cm}
+		These inputs are needed:\\
+		\bigskip
+		\begin{enumerate}
+			\setlength{\leftskip}{1cm}
+				\item Specify the variable with the unique IDs of the participants. In the example, this is the variable "Observer".
+				\bigskip
+				\item Specify which columns have the original randomization data used to assign items to each observer. In the example, these are the variables "Item1", "Item2", and "Item3". Use Shift+Click or Ctrl+Click to select multiple variables.
+				\bigskip
+				\item Specify in which columns the response data (observations) are to be found. In the example, these are the variables "Winner", "Middle", "Loser". Use Shift+Click or Ctrl+Click to select multiple variables.
+				\bigskip
+				\item Select which variables potentially explain differences in preferences between observers: the characteristics of the observers or the environmental conditions. In the example, "Age" and "Village" are explanatory variables. ClimMob can deal with any type of variable, including categories. Use Shift+Click or Ctrl+Click to select multiple variables.
+				\bigskip
+				\item If different aspects were evaluated, select the variable that indicates this. In the example, this is variable "Questions".
+				\bigskip
+				\item After selecting the variable under number 5 , this selection menu is being filled with the relevant categories from this column of the dataset. Select which questions or aspects you want to include in the analysis. Use Shift+Click or Ctrl+Click to select multiple aspects.
+		\end{enumerate}
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\begin{large}
+		Create report\\
+	\end{large}
+	\bigskip
+
+	\setlength{\leftskip}{1cm}
+		ClimMob automatically creates a report based on the data and the model. The report is a document in Rich Text Format with a .doc extension. It opens in Word and in other word processing software.
+		\bigskip
+		To create the report, open the "Create report window"
+
+	\begin{figure}[ht!]
+	\setlength{\leftskip}{0.9cm}
+	\includegraphics[width=140mm]{ClimMob_img011.png}
+	%%\caption{Pues si pues si \label{overflow}}
+	\end{figure}
+	\bigskip
+
+	To create the report, open the "Create report window"
+	\bigskip
+	\begin{enumerate}
+		\setlength{\leftskip}{1cm}
+			\item Select the folder where the file should be written.
+			\bigskip
+			\item Give the file an informative name that makes it easy to find it back. The .doc extension makes that the document opens automatically in Microsoft Word. An .rtf extension is also possible and works with other software. 
+	\end{enumerate}
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\begin{large}
+		Create info sheets\\
+	\end{large}
+	\bigskip
+
+	\setlength{\leftskip}{1cm}
+		ClimMob creates individual info sheets for each participant, based on the data and the model loaded in memory. The format of these infosheets can be customized.
+		\bigskip
+		Open the "Create info sheets" window.
+
+	\begin{figure}[ht!]
+	\setlength{\leftskip}{0.9cm}
+	\includegraphics[width=140mm]{ClimMob_img012.png}
+	%%\caption{Pues si pues si \label{overflow}}
+	\end{figure}
+	\bigskip
+
+		Each element can be selected and modified by checking the boxes. For each element, generic example texts are included, but these need to be adapted to the context of your crowdsourcing experiment.
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\setlength{\leftskip}{1cm}
+		The following elements can be included in the info sheets.\\
+		\bigskip
+		\begin{enumerate}
+			\setlength{\leftskip}{1cm}
+				\item Info sheet title. This is printed in a bigger font and in bold on top of every info sheet. The intro text is printed below in a smaller font and can be used to give some further explanation.
+				\smallskip
+				\item Participant name and place takes information from the data loaded in memory. For each element, a column should be selected from which the information is extracted.
+				\smallskip
+				\item Item names give the items given to the observer and their respective codes/numbers in a table. Ranking gives how the observer has ranked these items (useful if ranking was done blindly, which is recommended). Predicted ranking shows how the items given to the observer were ranked by the larger group in which the observer is included by the Terry-Bradley tree model.
+				\smallskip
+				\item Top items are the items that score highest overall in the results from the larger group (similar to Predicted ranking but for the whole set of items, not only those given to the observer). You have to choose the number of items that are shown.  
+				\smallskip
+				\item Concluding message is a text included at the end of the info sheet.
+				\smallskip
+				\item Give the info sheets document an informative file name to make it easier to find it back later. The .doc extension makes that the document opens automatically in Microsoft Word. An .rtf extension is also possible and works with other software. 
+				\smallskip
+				\item Choose a folder to write the info sheets to.
+				\smallskip
+				\item Press this button when finished.
+		\end{enumerate}
+
+	\vfill	
+
+	\setlength{\leftskip}{0cm}
+		\begin{large}
+			Further info sheet formatting \
+		\end{large}
+		\bigskip
+
+	\setlength{\leftskip}{1cm}
+		To further customize the info sheet, open it in Microsoft Word.  Use "Find and replace" to systematically change texts on each info sheet. 
+		\bigskip
+		\begin{itemize}
+			\setlength{\leftskip}{1cm}
+				\item Correct mistakes made when creating the info sheets
+				\smallskip
+				\item Change spelling errors in item names
+				\smallskip
+				\item If you have a column with Gender ("female", "male") this can be inserted before the name and then replaced by "Mrs." and "Mr." in the info sheets options. 
+				\smallskip
+				\item Create texts in non-Latin scripts 
+		\end{itemize}
+
+\end{flushleft}
+\pagebreak
+\setlength{\parindent}{0cm}
+\begin{flushleft}
+
+	\begin{large}
+		Future improvements\\
+	\end{large}
+	\bigskip
+
+	\setlength{\leftskip}{1cm}
+		For next versions, the following aspects are being considered:
+		\bigskip
+		\begin{itemize}
+			\setlength{\leftskip}{1cm}
+			\item Installation. Future versions should be on CRAN, making installation easier.
+			\smallskip
+			\item Randomization. A somewhat empirical approach has been followed here. Designs can be optimized further.
+			\smallskip
+			\item Report. Visualization of the results will be improved by including error bars. Reporting of statistical results will be improved and better explained.
+		\end{itemize}
+		\bigskip
+		Suggestions for improvement and contributions of code are more than welcome.
+
+ 
+	\vfill	
+
+	\setlength{\leftskip}{0cm}
+	\begin{large}
+		Further reading\\
+	\end{large}
+	\bigskip
+
+	\setlength{\leftskip}{1cm}
+		van Etten, J. 2011. Crowdsourcing crop improvement in sub-Saharan Africa: A proposal for a scalable and inclusive approach to food security. IDS Bulletin 42(4), 102-110.
+		\bigskip
+
+	\setlength{\leftskip}{2cm}
+		This paper introduce crowdsourcing in agriculture, applied to farmer variety selection.
+		\bigskip
+
+	\setlength{\leftskip}{1cm}
+Strobl, C., F. Wickelmaier, A. Zeileis 2011. Accounting for individual differences in Bradley-Terry models by means of recursive partitioning. Journal of Educational and Behavioral Statistics, 36(2), 135-153. 
+		\bigskip
+
+	\setlength{\leftskip}{2cm}
+This paper introduces the statistical method used in ClimMob, the Bradley-Terry tree model.
+
+\end{flushleft}
+\end{document}

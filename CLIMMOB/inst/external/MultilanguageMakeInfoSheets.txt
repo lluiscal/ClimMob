@@ -1,0 +1,22 @@
+Thank you for participating!	¡Gracias por su participación!
+**Your name is	Su nombre es
+**Your surname(s) is	Sus apellidos son
+**Your address is	Su dirección es
+**Your phone number is	Su número telefónico es
+These are the results of the experiment you contributed to.	A continuación se presentan los resultados de la investigación en que usted ha participado.
+You received the following items to rank:	Usted recibió los siguientes Elementos para clasificar:
+Item	Objeto
+Name	Nombre
+You ranked these items in the following order:	Usted clasificó estos Elementos en el orden que sigue:
+Characteristic	Caracteristica
+Best	Mejor
+Second	Segundo
+Worst	Peor
+Position	Posicion
+Local Variety	Variedad Local
+You compared the global performance of these Items with your Local Variety	Usted comparó el desempeño global de estos Elementos con la Variedad Local
+Positions	Posiciones
+Items	Elementos
+These are the best and the worst Items you and observers with the similar characteristics	Estos son los mejores y peores Elementos que usted y observadores parecidos 
+received:	recibieron:
+No Explanatory Variables	Sin Variables Explicativas
